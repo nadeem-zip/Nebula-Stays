@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <form action="/listings/<%=listing._id%>?_method=PUT" enctype="multipart/form-data" method="POST" class="form-container needs-validation" novalidate>
+        <div> 
+            <label for="title" class="form-label">Title: </label>
+            <input type="text" name="listings[title]" id="title" class="form-control" value="<%=listing.title%>"  required>
+            <div class="valid-feedback">Title Looks Good</div>
+            <div class="invalid-feedback">Enter Valid Title</div>
+        </div>
+        <div> 
+            <label for="description" class="form-label">Description: </label>
+             <textarea name="listings[description]" id="description" class="form-control" required><%=listing.description%></textarea>
+                <div class="valid-feedback">Description Looks Good!</div>
+            <div class="invalid-feedback">Enter Valid Description</div>
+        </div>
+        <div> 
+            <label for="price" class="form-label">Price :</label>
+            <input type="number" name="listings[price]" id="price" class="form-control" value="<%=listing.price%>" required>
+            <div class="valid-feedback">Price Looks Good!</div>
+            <div class="invalid-feedback">Enter Valid Price</div>
+        </div>
+        <div> 
+            <label for="location" class="form-label">Location :</label>
+            <input type="text" name="listings[location]" id="location" class="form-control" value="<%=listing.location%>" required>
+            <div class="valid-feedback">Location Looks Good!</div>
+            <div class="invalid-feedback">Enter Valid Location</div>
+        </div>
+        <div> 
+            <label for="country" class="form-label">Country :</label>
+            <input type="text" name="listings[country]" id="country" class="form-control" value="<%=listing.country%>" required>
+            <div class="valid-feedback">Country Looks Good!</div>
+            <div class="invalid-feedback">Enter Valid Country</div>
+        </div>
+        <div> 
+            <label for="image" class="form-label">Image :</label>
+            <input type="file" name="listings[image]" id="image" class="form-control" placeholder="upload image">
+            <div class="valid-feedback">Image will be set to default image if you wont provide  explicit url</div>
+        </div>
+        <button class="btn btn-dark">Submit</button>
+    </form>
+ 
+   
+</body>
+</html>

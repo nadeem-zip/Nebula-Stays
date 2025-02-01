@@ -1,0 +1,27 @@
+<% layout('/layouts/boilerplate') %> 
+<div class="row mt-3">
+    <H1 class="col-6 offset-4">Sign Up on Nebula Stay</H1>
+    <div class="col-6 offset-3" >
+        <form action="/signup" method="post" class="needs-validation form-container" novalidate>
+            <div> 
+                <label for="username" class="form-label">Username: </label>
+                <input type="text" name="username" id="username" class="form-control" required>
+                <div class="valid-feedback">username Looks Good</div>
+                <div class="invalid-feedback">Enter Valid  username</div>
+            </div>
+            <div> 
+                <label for="email" class="form-label">Email: </label>
+                <input type="email" name="email" id="email" class="form-control" required>
+                <div class="valid-feedback">email Looks Good</div>
+                <div class="invalid-feedback">Enter Valid  email</div>
+            </div>
+            <div> 
+                <label for="password" class="form-label">Password: </label>
+                <input type="password" name="password" id="password" class="form-control" required>
+                <div class="valid-feedback">password Looks Good</div>
+                <div class="invalid-feedback">Enter Valid  password</div>
+            </div>
+            <button class="btn btn-outline-success">Sign UP</button>
+        </form>
+    </div>
+</div>

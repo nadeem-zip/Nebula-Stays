@@ -1,0 +1,21 @@
+<% layout('/layouts/boilerplate') %> 
+<div class="row mt-3">
+    <H1 class="col-6 offset-4  ">Login To Nebula Stay</H1>
+    <div class="col-6 offset-3" >
+        <form action="/login" method="post" class="needs-validation form-container" novalidate>
+            <div> 
+                <label for="username" class="form-label">Username: </label>
+                <input type="text" name="username" id="username" class="form-control" required>
+                <div class="valid-feedback">username Looks Good</div>
+                <div class="invalid-feedback">Enter Valid  username</div>
+            </div>
+            <div> 
+                <label for="password" class="form-label">Password: </label>
+                <input type="password" name="password" id="password" class="form-control" required>
+                <div class="valid-feedback">password Looks Good</div>
+                <div class="invalid-feedback">Enter Valid  password</div>
+            </div>
+            <button class="btn btn-outline-success">Log In</button>
+        </form>
+    </div>
+</div>
