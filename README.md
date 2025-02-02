@@ -1,9 +1,9 @@
-#Nebula Stay – A Platform for Property Listings
+#Nebula Stay – A Platform for Property Listings#
 
 
-****Nebula Stay is a full-stack web application that allows users to list their properties for rent. Built with Express.js and MongoDB, it provides an easy-to-use platform for hosts to showcase their homes to potential guests.
+****Nebula Stay is a full-stack web application that allows users to list their properties for rent. Built with Express.js and MongoDB, it provides an easy-to-use platform for hosts to showcase their homes to potential guests.****
 
-****Key Features:
+****Key Features:****
 
 User Authentication: Secure login and registration using Passport.js.
 
@@ -13,7 +13,7 @@ Search & Filters: Visitors can browse and filter properties based on location, p
 
 Reviews & Ratings: Users can leave feedback and rate listed properties.
 
-****Tech Stack:
+****Tech Stack:****
 
 Backend: Node.js, Express.js, MongoDB
 
